@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/page.js"
+to = "/index.html"
 status = 200
