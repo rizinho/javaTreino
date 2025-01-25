@@ -1,7 +1,6 @@
 'use client'
 
 import styles from '@/app/page.module.css'
-import Header from '@/components/Header/page';
 
 import { useState } from 'react';
 
@@ -9,12 +8,11 @@ export default function Home() {
 
   const [newNote, setNewNote] = useState('');
   const [notes, setNotes] = useState([]);
-  const [showDisplay, setShowDisplay] = useState(false);
+  const [showDisplay, setShowDisplay] = useState(false)
 
   const isVisible = () => {
     setShowDisplay(true)
   }
-
   const addNote = () => {
     if (newNote.trim() === '') return;
     setNotes([...notes, newNote]);
